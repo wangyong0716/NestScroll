@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <nest.wy.com.nestscroll.nest.NestScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_tiny"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="focus view!"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_large"
+                android:background="@color/black_8"
+                android:gravity="center"
+                android:text="Hello World!"/>
+
+            <TextView
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/black_7"
+                android:gravity="center"
+                android:text="this is tab!"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/black_7"
+                android:gravity="center"
+                android:text="something at bottom!"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_huge"
+                android:background="@color/black_6"
+                android:gravity="center"
+                android:text="BOTTOM!"/>
+        </LinearLayout>
+
+    </nest.wy.com.nestscroll.nest.NestScrollView>
+</LinearLayout>

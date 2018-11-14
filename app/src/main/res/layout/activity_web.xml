@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <nest.wy.com.nestscroll.nest.NestScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_9"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_large"
+                android:background="@color/black_8"
+                android:gravity="center"
+                android:text="Hello World!"/>
+
+            <TextView
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_small"
+                android:background="@color/black_7"
+                android:gravity="center"
+                android:text="this is tab!"/>
+
+            <nest.wy.com.nestscroll.nest.NestWebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_small"
+                android:background="@color/black_7"
+                android:gravity="center"
+                android:text="something at bottom!"/>
+        </LinearLayout>
+
+    </nest.wy.com.nestscroll.nest.NestScrollView>
+</LinearLayout>

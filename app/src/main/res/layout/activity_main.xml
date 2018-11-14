@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="nest.wy.com.nestscroll.MainActivity">
+
+    <TextView
+        android:id="@+id/pager_list_btn"
+        android:layout_width="@dimen/view_width_large"
+        android:layout_height="@dimen/view_width_small"
+        android:text="PAGER LIST"
+        android:textColor="@color/black_0"
+        android:textSize="@dimen/text_size_large"
+        android:background="@color/black_8"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_margin_top"
+        />
+
+    <TextView
+        android:id="@+id/web_btn"
+        android:layout_width="@dimen/view_width_large"
+        android:layout_height="@dimen/view_width_small"
+        android:text="WEB"
+        android:textColor="@color/black_0"
+        android:textSize="@dimen/text_size_large"
+        android:background="@color/black_8"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_margin_top"
+        />
+
+</LinearLayout>
