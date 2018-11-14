@@ -97,6 +97,10 @@ public class PagerItemView extends FrameLayout {
         mListView.removeFooterView(mFooterView);
     }
 
+    public void scrollToTop() {
+        mListView.scrollToTop();
+    }
+
     public void setHeightChangeListener(HeightChangeListener heightChangeListener) {
         mHeightChangeListener = heightChangeListener;
         mListView.setHeightChangeListener(mHeightChangeListener);

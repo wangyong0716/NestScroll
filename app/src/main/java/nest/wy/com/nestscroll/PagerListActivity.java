@@ -58,6 +58,7 @@ public class PagerListActivity extends Activity {
                 }
                 mNestScrollView.setNestChildView(mViewsList.get(position).getNestChildView());
                 mViewsList.get(position).notifyHeightListener();
+                mViewsList.get(position).scrollToTop();
             }
 
             @Override
